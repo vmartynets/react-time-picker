@@ -98,7 +98,7 @@ export default function Input({
       required={required}
       step={step}
       type="number"
-      value={value !== null ? value : ''}
+      value={value !== null ? `${value}` : ''}
     />,
   ];
 }

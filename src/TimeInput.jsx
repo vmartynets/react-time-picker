@@ -316,7 +316,7 @@ export default class TimeInput extends PureComponent {
       }
       default: {
         this.setState(
-          { [name]: value ? parseInt(value, 10) : null },
+          { [name]: value ? Math.max(0, parseInt(value, 10) % 60) : null },
           this.onChangeExternal,
         );
       }
